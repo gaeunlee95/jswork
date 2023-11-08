@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대입 연산자 연습 문제</title>
+  <style>
+    body{
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    let x = 0, y = 1;
+    let temp; //임시 변수
+
+    document.write("교환 전<br>")
+    document.write("x=" + x + ", y=" + y);
+    document.write("<br><br>")
+
+    //교환 처리
+    temp = x;
+    console.log(temp);
+    x = y;
+    console.log(x);
+    y = temp;
+    console.log(y);
+    
+    document.write("교환 후<br>")
+    document.write("x=" + x + ", y=" + y);
+  </script>
+</body>
+</html>
