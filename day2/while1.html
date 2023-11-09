@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>while 반복문</title>
+  <script>
+    //1부터 10까지 출력
+    /* let num = 0;  //초기값
+    while(num < 10){
+      // num += 1; //num = num + 1;
+      num++;
+      console.log(num);
+      // document.write(num);
+    }*/
+
+    /*let num = 1;  //초기값
+    while(num <= 10){
+      // num += 1; //num = num + 1;
+      // console.log(num);
+      document.write(num + " ");
+      num++;
+    }*/
+
+    //while ~ if break (반복조건문) -> 권장
+    /*let number = 0;
+    while(true){
+      number += 1;
+      if(number > 10)
+        break;
+      document.write(number + " ");
+    }*/
+    
+    let i = 0;
+    let sumVal = 0;
+    while(true){
+      i += 1;
+      if(i > 10)
+      
+        break;
+        sumVal += i; //sumVal = sumVal + i;
+      document.write(i + " ");
+      console.log("i= " + i + ", sumVal= " + sumVal);
+    }
+    document.write("<br>합계 : " + sumVal);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
