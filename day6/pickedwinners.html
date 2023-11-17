@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추천 프로그램</title>
+  <style>
+    section{
+      /* width: 800px; */
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1{
+      border: 1px solid #ccc;
+      background-color: #eee;
+      display: inline-block; /* 텍스트 큭에 맞춰서 테두리 그려짐 */
+      padding: 10px 20px;
+    }
+    p{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>당첨자 발표</h1>
+  </section>
+  
+  <script>
+    let member = 20;  //전체 응모자 수
+    let winner = 4;   //당첨자 수
+    // let array = [];
+
+    document.write("<p>전체 응모자 수: " + member + "명</p>");
+    document.write("<p>당첨자: ");
+
+    //winners 추첨
+    for(let i = 1; i <= winner; i++){
+      let pickedOne = Math.floor(Math.random()*member) + 1;
+      
+      // for(let j = 0; j <= array.length; j++){
+      //   if()
+      // }
+
+      document.write(pickedOne + "번 ");
+    }
+    
+    document.write("</p>");
+    
+  </script>
+</body>
+</html>

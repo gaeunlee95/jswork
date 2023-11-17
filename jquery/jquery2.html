@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이쿼리 예제</title>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script>
+    //제이쿼리 방식 - 실행 환경
+    $(document).ready(function(){
+      //$(태그선택자, id선택자, class 선택자)
+      //text() - 텍스트를 추가(생성)함
+      $("#show").text("안녕~ jQuery!");
+      $("#show").css({'font-size':'2em', 'color':'blue'});
+    });
+  </script>
+</head>
+<body>
+  <p id="show"></p>
+</body>
+</html>

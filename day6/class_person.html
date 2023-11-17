@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생성자 함수(클래스) 사용하기</title>
+</head>
+<body>
+  <script>
+    function Person(name, age, isMerried){
+      this.name = name;
+      this.age = age;
+      this.isMerried = isMerried; 
+    
+      this.info = function(){
+        //미혼, 기혼임을 출력
+        if(isMerried){  //isMerried == true
+          document.write("기혼입니다.<br>");
+        }else{
+          document.write("미혼입니다.<br>")
+        }
+      }
+    }
+    //1명 생성
+    //let p1 = new Person();
+    let lee = new Person("이강인", 25, false);
+    document.write(lee.name + "<br>");
+    document.write(lee.age + "<br>");
+    lee.info();
+
+    //2명 생성
+    let woo = new Person("우영우", 30, false);
+    document.write(woo.name + "<br>");
+    document.write(woo.age + "<br>");
+    woo.info();
+
+  </script>
+</body>
+</html>

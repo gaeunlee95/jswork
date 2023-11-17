@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 보이기 및 숨기기</title>
+  <style>
+    button{
+      margin: 10px 2px;
+    }
+    img{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showHide()" id="btn">보이기</button>
+  <div>
+    <img src="images/flower.jpg" alt="꽃" id="pic">
+  </div>
+
+  <script>
+    //버튼 토글(toggle) - 2가지 기능
+    let sw = true;
+    
+    function showHide(){
+      //처음 호출하면 보이기, 두번째 호출하면 숨기기
+      //상태를 바꿔놓아야 함
+      let pic = document.getElementById("pic");  
+      let btn = document.getElementById("btn");  
+      if(sw){ // sw =true
+        pic.style.display = "block";
+        btn.innerText= "숨기기";
+        sw = false;
+      }else{
+        pic.style.display = "none";
+        btn.innerText= "보이기";
+        sw = true;
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* event.html */
+
+@charset "utf-8";
+
+#container{
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* 부모 기준 */
+}
+button{
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1, h3{
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>3의 배수 찾기</h1>
+  <h3 id="result"></h3>
+  <h3 id="count"></h3>
+
+  <script>
+    // let count = 0;
+    // let number = prompt("몇 까지 3의 배수를 찾을까요?");
+
+    // if(number == null){
+    //   document.getElementById("result").innerHTML = "입력이 취소되었습니다."
+    // }else if(isNaN(number)){
+    //   document.getElementById("result").innerHTML = "숫자를 입력해주세요."
+    // }else{
+    //   // number = parseInt(number);
+    //   for(let i=1; i<=number; i++){
+    //     if(i % 3 == 0){
+    //       document.getElementById("result").innerHTML = i + " ";
+    //       count++;
+    //     }
+    //     document.getElementById("count").innerHTML = number + "까지 3의 배수의 개수 : " + count;
+    //   }
+    // }
+
+    let arr = [];
+    let count = 0;
+    let number = prompt("몇 까지 3의 배수를 찾을까요?");
+    
+
+    if(number == null){
+      document.getElementById("result").innerHTML = "입력이 취소되었습니다."
+    }else if(isNaN(number)){
+      document.getElementById("result").innerHTML = "숫자를 입력해주세요."
+    }else{
+      // number = parseInt(number);
+      for(let i=1; i<=number; i++){
+        if(i % 3 == 0){
+          arr.push(i);
+          document.getElementById("result").innerHTML = arr;
+          count++;
+        }
+        document.getElementById("count").innerHTML = number + "까지 3의 배수의 개수 : " + count;
+      }
+    }
+      </script>
+</body>
+</html>
+

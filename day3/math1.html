@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>절대값 함수 사용</title>
+</head>
+<body>
+  <script>
+    //절대값 함수 정의
+    //매개변수값이 음수이면 양수로 리턴
+    //매개변수값이 양수이면 양수로 리턴
+    
+    /*function myAbs(x){
+      return Math.abs(x);
+    }*/
+
+    function myAbs(x){
+      if(x<0){
+        return -x;
+      }else{
+        return x //x>=0
+      }
+    }
+    console.log(myAbs(-5)); //5
+    
+    //내장 객체(Math)
+    console.log(Math.abs(-5));
+    console.log(Math.abs(5));
+  </script>
+</body>
+</html>

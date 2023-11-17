@@ -15,16 +15,26 @@ console.log(num);
 //특정 요소 1개 조회
 console.log(num[0]);
 
+//수정
+num[1] = 40;
+
 //전체 요소 조회
 for(let i=0; i<num.length; i++){
   console.log(num[i]);
 }
+console.log("for~in문 사용")
+//for in
+for(let i in num){
+  console.log(num[i])
+}
 
 //연산
+console.log("연산")
 console.log(num[1] - num[2]);
 console.log(num[1] <= num[2]);
 
 //합계 및 평균
+console.log("합계 및 평균");
 let sum = 0;
 let avg;
 for(let i=0; i<num.length; i++){
@@ -33,5 +43,6 @@ for(let i=0; i<num.length; i++){
 }
 avg = sum / num.length;  //평균 = 합계 / 개수
 console.log(sum);
-console.log(avg);
+console.log(avg.toFixed(2));
+
 

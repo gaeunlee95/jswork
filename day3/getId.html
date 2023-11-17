@@ -7,17 +7,17 @@
 </head>
 <body>
   <h1>My Web Page</h1>
-  <p id="print">이것은 p 태그입니다.</p>
   <p id="print2"></p>
-
+  <p id="print">이것은 p 태그입니다.</p>
+  
   <script>
-    //document.write("This is a p element");
+    // document.write("This is a p element");
     document.getElementById("print").innerHTML 
       = "This is a p element";
       
     let text = document.getElementById("print2");
     text.innerHTML = "잘 지내니?";
-    text.style.color = "blue";
+    text.style.color = "blue"; 
   </script>
 </body>
 </html>
