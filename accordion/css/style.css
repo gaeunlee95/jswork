@@ -26,9 +26,11 @@ a{
 }
 .accordion_box ol li h4{
   margin: 20px 30px;
+  cursor: pointer;
   background: url("../images/bullet_down.png") no-repeat right;
 }
 .accordion_box ol li.on h4{
+  cursor: pointer;
   background: url("../images/bullet_up.png") no-repeat right;
 }
 .accordion_box ol li h4 span{
